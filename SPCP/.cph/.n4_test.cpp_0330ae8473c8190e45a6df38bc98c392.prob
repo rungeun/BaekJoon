@@ -1,0 +1,1 @@
+{"name":"Local: n4_test","url":"c:\\Users\\wjdrm\\Desktop\\Development\\BaekJoon\\SPCP\\n4_test.cpp","tests":[{"id":1720194838468,"input":"5 38\n10 20 30 40 50\n10 20 30 40 50\n","output":"30"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\wjdrm\\Desktop\\Development\\BaekJoon\\SPCP\\n4_test.cpp","group":"local","local":true}
