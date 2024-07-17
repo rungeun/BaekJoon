@@ -5,6 +5,7 @@ using namespace std;
 using ll = long long;
 using ld = long double;
 using pii = pair<int, int>;
+const ll MOD = 1e9+7; // 모듈러 값을 정의
 const int sz = 1 << 17;
 const int INF = INT_MAX;
 

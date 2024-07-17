@@ -15,7 +15,7 @@
 |24/07/14|[4949](https://www.acmicpc.net/problem/4949)|균형잡힌 세상|`stack` `data structures` `string`|Sliver4|`stack` `data structures` `string`|각 경우에 따라 'no'를 출력(1.스택이 비었음에도 오른쪽 괄호가 있는 경우, 2.스택에 있는 괄호와 짝이 맞지 않는 경우, 3.검사가 끝남음에도 스택이 비어있지 않은 경우), `getline(cin, input);`를 사용하여 문자열 한줄을 입력받음| 
 |24/07/15|[2839](https://www.acmicpc.net/problem/2839)|설탕 배달|`dp` `greedy` `math`|Sliver4|`dp`|`memoization`을 사용하여 재귀적 탐색을 함, cache를 사용하여 이미 계산된 (a, b) 조합의 결과를 저장하고, 중복 계산을 피함 1.(5a + 3b)가 N을 초과하면 INF 반환 2.(5a + 3b)가 N과 같으면 a + b를 반환 3.a(5kg)와 b(3kg)를 1씩 증가시키면서 재귀적으로 호출| 
 |24/07/16|[11659](https://www.acmicpc.net/problem/11659)|구간 합 구하기 4|`prefix_sum`|Sliver3|`Fenwick Tree`| `Fenwick Tree`구조로 구간을 나누어 구간 합을 구함 구간 i와 j일 경우: fenwick.sum(j) - fenwick.sum(i - 1)|
-|24/07/|[]()||``||``||
+|24/07/17|[2042](https://www.acmicpc.net/problem/2042)|구간 합 구하기|`data structures` `segmentTree`|Gold1|`Fenwick Tree`|앞에서 사용했던 구조체 `Fenwick Tree`를 함수형태로 바꿔 재사용함, 팬윅 트리 업데이트 오개념을 바로 잡음|
 |24/07/|[]()||``||``||
 |24/07/|[]()||``||``||
 
