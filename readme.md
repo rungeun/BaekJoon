@@ -16,6 +16,10 @@
 |24/07/15|[2839](https://www.acmicpc.net/problem/2839)|설탕 배달|`dp` `greedy` `math`|Sliver4|`dp`|`memoization`을 사용하여 재귀적 탐색을 함, cache를 사용하여 이미 계산된 (a, b) 조합의 결과를 저장하고, 중복 계산을 피함 1.(5a + 3b)가 N을 초과하면 INF 반환 2.(5a + 3b)가 N과 같으면 a + b를 반환 3.a(5kg)와 b(3kg)를 1씩 증가시키면서 재귀적으로 호출| 
 |24/07/16|[11659](https://www.acmicpc.net/problem/11659)|구간 합 구하기 4|`prefix_sum`|Sliver3|`Fenwick Tree`| `Fenwick Tree`구조로 구간을 나누어 구간 합을 구함 구간 i와 j일 경우: fenwick.sum(j) - fenwick.sum(i - 1)|
 |24/07/17|[2042](https://www.acmicpc.net/problem/2042)|구간 합 구하기|`data structures` `segmentTree`|Gold1|`Fenwick Tree`|앞에서 사용했던 구조체 `Fenwick Tree`를 함수형태로 바꿔 재사용함, 팬윅 트리 업데이트 오개념을 바로 잡음|
+|24/07/18|[2357](https://www.acmicpc.net/problem/2357)|최솟값과 최댓값|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 구간 최솟값과 최댓값에 대한 update, query를 각각 만듬, $$minT[i]=min(minT[i<<1], minT[i<<1 \mid 1]);$$ $$maxT[i]=max(maxT[i<<1], maxT[i<<1 \mid 1]);$$|
+|24/07/18|[10868](https://www.acmicpc.net/problem/10868)|최솟값|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 구간 최솟값 update, query를 만듬, $$minT[i]=min(minT[i<<1], minT[i<<1 \mid 1]);$$|
+|24/07/18|[11505](https://www.acmicpc.net/problem/10505)|구간 곱 구하기|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 군간 곱에 대한 update, query를 만듬, $$mulT[i]=((mulT[i<<1] MOD m)*(mulT[i<<1\mid1]MODm))MODm;$$|
+|24/07/|[1275](https://www.acmicpc.net/problem/1275)|커피숍2|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 군간 합에 대한 update, query를 만듬, $$sumT[i] = sumT[i << 1] + sumT[i << 1 \mid 1]$$|
 |24/07/|[]()||``||``||
 |24/07/|[]()||``||``||
 
