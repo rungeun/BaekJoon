@@ -16,10 +16,16 @@
 |24/07/15|[2839](https://www.acmicpc.net/problem/2839)|설탕 배달|`dp` `greedy` `math`|Sliver4|`dp`|`memoization`을 사용하여 재귀적 탐색을 함, cache를 사용하여 이미 계산된 (a, b) 조합의 결과를 저장하고, 중복 계산을 피함 1.(5a + 3b)가 N을 초과하면 INF 반환 2.(5a + 3b)가 N과 같으면 a + b를 반환 3.a(5kg)와 b(3kg)를 1씩 증가시키면서 재귀적으로 호출| 
 |24/07/16|[11659](https://www.acmicpc.net/problem/11659)|구간 합 구하기 4|`prefix_sum`|Sliver3|`Fenwick Tree`| `Fenwick Tree`구조로 구간을 나누어 구간 합을 구함 구간 i와 j일 경우: fenwick.sum(j) - fenwick.sum(i - 1)|
 |24/07/17|[2042](https://www.acmicpc.net/problem/2042)|구간 합 구하기|`data structures` `segmentTree`|Gold1|`Fenwick Tree`|앞에서 사용했던 구조체 `Fenwick Tree`를 함수형태로 바꿔 재사용함, 팬윅 트리 업데이트 오개념을 바로 잡음|
-|24/07/18|[2357](https://www.acmicpc.net/problem/2357)|최솟값과 최댓값|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 구간 최솟값과 최댓값에 대한 update, query를 각각 만듬, $$minT[i]=min(minT[i<<1], minT[i<<1 \mid 1]);$$ $$maxT[i]=max(maxT[i<<1], maxT[i<<1 \mid 1]);$$|
+|24/07/18|[2357](https://www.acmicpc.net/problem/2357)|최솟값과 최댓값|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 구간 최솟값과 최댓값에 대한 update, query를 각각 만듬,$$minT[i]=min(minT[i<<1], minT[i<<1 \mid 1]);$$ $$maxT[i]=max(maxT[i<<1], maxT[i<<1 \mid 1]);$$|
 |24/07/18|[10868](https://www.acmicpc.net/problem/10868)|최솟값|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 구간 최솟값 update, query를 만듬, $$minT[i]=min(minT[i<<1], minT[i<<1 \mid 1]);$$|
 |24/07/18|[11505](https://www.acmicpc.net/problem/10505)|구간 곱 구하기|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 군간 곱에 대한 update, query를 만듬, $$mulT[i]=((mulT[i<<1] MOD m)*(mulT[i<<1\mid1]MODm))MODm;$$|
-|24/07/|[1275](https://www.acmicpc.net/problem/1275)|커피숍2|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 군간 합에 대한 update, query를 만듬, $$sumT[i] = sumT[i << 1] + sumT[i << 1 \mid 1]$$|
+|24/07/18|[1275](https://www.acmicpc.net/problem/1275)|커피숍2|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 군간 합에 대한 update, query를 만듬, $$sumT[i] = sumT[i << 1] + sumT[i << 1 \mid 1]$$|
+|24/07/18|[2268](https://www.acmicpc.net/problem/2268)|수들의 합 7|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리로 군간 합에 대한 update, query를 만듬, $$sumT[i] = sumT[i << 1] + sumT[i << 1 \mid 1]$$|
+|24/07/18|[14428](https://www.acmicpc.net/problem/14428)|수열과 쿼리 16|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트를 변형해서 인덱스 번호를 저장하거나, 최솟값을 구하는 세그먼트로도 가능하다. 배열을 하나 만들어서 값을 저장해두고 최솟값으로 start,end를 탐색하여 첫 번째로 나오는 인덱스 번호 출력하면 됨|
+|24/07/19|[14438](https://www.acmicpc.net/problem/14438)|수열과 쿼리 17|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리 수정하여 안정적으로 만듬, $$return \ min(query(s, e, node << 1, ns, mid), \ query(s, e, node << 1 \mid 1, mid + 1, ne));$$|
+|24/07/19|[5676](https://www.acmicpc.net/problem/5676)|음주 코딩|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|구간의 곱을 구하여 음수,0,양수를 판단하는 문제이므로 트리에 입력받은 정수를 저장하지 않고, -1,0,1만 저장하여 계산하는 값을 작게함, EOF 처리를 함|
+|24/07/19|[18436](https://www.acmicpc.net/problem/18436)|수열과 쿼리 37|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|구간의 합은 짝수,홀수인지 퀴리를 하는 문제이므로 시그먼트 트리에 입력받은 정수를 저장하지 않고 짝수일 경우에만 1을 저장하면 구간의 합은 짝수의 개수가 됨, 또한 (구한의 길이)-(짝수의 개수)를 하면 홀수의 개수도 또한 구할 수 있음|
+|24/07/|[]()||``||``||
 |24/07/|[]()||``||``||
 |24/07/|[]()||``||``||
 
@@ -36,5 +42,27 @@
 <!--
 임시 메모
 
+1  : Bronze V
+2  : Bronze IV
+3  : Bronze III
+4  : Bronze II
+5  : Bronze I
+6  : Silver V
+7  : Silver IV
+8  : Silver III
+9  : Silver II
+10 : Silver I
+11 : Gold V
+12 : Gold IV
+13 : Gold III
+14 : Gold II
+15 : Gold I
+16 : Platinum V
+17 : Platinum IV
+18 : Platinum III
+19 : Platinum II
+20 : Platinum I
+
 
 -->
+

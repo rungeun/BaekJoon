@@ -36,9 +36,6 @@ int main(void) {
         cin >> arr[_];
         update(_, arr[_]);
     }
-    // for(int i=0; i<N*4; i++){
-    //     cout<< minT[i]<< ' ';
-    // }
     for (int _ = 0; _ < M; _++) {
         cin >> a >> b;
         Answer = query(a - 1, b - 1);
