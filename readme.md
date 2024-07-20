@@ -24,7 +24,9 @@
 |24/07/18|[14428](https://www.acmicpc.net/problem/14428)|수열과 쿼리 16|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트를 변형해서 인덱스 번호를 저장하거나, 최솟값을 구하는 세그먼트로도 가능하다. 배열을 하나 만들어서 값을 저장해두고 최솟값으로 start,end를 탐색하여 첫 번째로 나오는 인덱스 번호 출력하면 됨|
 |24/07/19|[14438](https://www.acmicpc.net/problem/14438)|수열과 쿼리 17|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|세그먼트 트리 수정하여 안정적으로 만듬, $$return \ min(query(s, e, node << 1, ns, mid), \ query(s, e, node << 1 \mid 1, mid + 1, ne));$$|
 |24/07/19|[5676](https://www.acmicpc.net/problem/5676)|음주 코딩|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|구간의 곱을 구하여 음수,0,양수를 판단하는 문제이므로 트리에 입력받은 정수를 저장하지 않고, -1,0,1만 저장하여 계산하는 값을 작게함, EOF 처리를 함|
-|24/07/19|[18436](https://www.acmicpc.net/problem/18436)|수열과 쿼리 37|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|구간의 합은 짝수,홀수인지 퀴리를 하는 문제이므로 시그먼트 트리에 입력받은 정수를 저장하지 않고 짝수일 경우에만 1을 저장하면 구간의 합은 짝수의 개수가 됨, 또한 (구한의 길이)-(짝수의 개수)를 하면 홀수의 개수도 또한 구할 수 있음|
+|24/07/19|[18436](https://www.acmicpc.net/problem/18436)|수열과 쿼리 37|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|구간의 합은 짝수,홀수인지 퀴리를 하는 문제이므로 세그먼트 트리에 입력받은 정수를 저장하지 않고 짝수일 경우에만 1을 저장하면 구간의 합은 짝수의 개수가 됨, 또한 (구한의 길이)-(짝수의 개수)를 하면 홀수의 개수도 또한 구할 수 있음|
+|24/07/20|[11003](https://www.acmicpc.net/problem/11003)|최솟값 찾기|`data structures` `priority_queue` `deque`|Platinum5|`data structures` `segmentTree`|세그먼트 트리로 풀었을 때 시간초과가 나와서 FestIO로 억지로 밀어 버렸음|
+|24/07/21|[]()||``||``||
 |24/07/|[]()||``||``||
 |24/07/|[]()||``||``||
 |24/07/|[]()||``||``||
@@ -41,7 +43,6 @@
 
 <!--
 임시 메모
-
 1  : Bronze V
 2  : Bronze IV
 3  : Bronze III
@@ -62,7 +63,5 @@
 18 : Platinum III
 19 : Platinum II
 20 : Platinum I
-
-
 -->
 
