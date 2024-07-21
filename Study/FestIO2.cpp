@@ -6,7 +6,7 @@ using ll = long long;
 using ld = long double;
 using pii = pair<int, int>;
 const ll MOD = 1e9+7;
-const int sz = 1 << 17;
+constexpr int sz = 1 << 17;
 const int INF = INT_MAX;
 
 ll a[sz];

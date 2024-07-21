@@ -26,9 +26,9 @@
 |24/07/19|[5676](https://www.acmicpc.net/problem/5676)|음주 코딩|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|구간의 곱을 구하여 음수,0,양수를 판단하는 문제이므로 트리에 입력받은 정수를 저장하지 않고, -1,0,1만 저장하여 계산하는 값을 작게함, EOF 처리를 함|
 |24/07/19|[18436](https://www.acmicpc.net/problem/18436)|수열과 쿼리 37|`data structures` `segmentTree`|Gold1|`data structures` `segmentTree`|구간의 합은 짝수,홀수인지 퀴리를 하는 문제이므로 세그먼트 트리에 입력받은 정수를 저장하지 않고 짝수일 경우에만 1을 저장하면 구간의 합은 짝수의 개수가 됨, 또한 (구한의 길이)-(짝수의 개수)를 하면 홀수의 개수도 또한 구할 수 있음|
 |24/07/20|[11003](https://www.acmicpc.net/problem/11003)|최솟값 찾기|`data structures` `priority_queue` `deque`|Platinum5|`data structures` `segmentTree`|세그먼트 트리로 풀었을 때 시간초과가 나와서 FestIO로 억지로 밀어 버렸음|
-|24/07/21|[]()||``||``||
-|24/07/|[]()||``||``||
-|24/07/|[]()||``||``||
+|24/07/21|[18870](https://www.acmicpc.net/problem/18870)|좌표 압축|`coordinate compression` `sorting`|Sliver2|`coordinate compression` `sorting`|vector 템플릿 클래스를 사용하여 중복을 제거하는 코드는 다음과 같음 sotredA.erase(unique(sotredA.begin(), sotredA.end()), sotredA.end()); 이후에 vector를 순회 하려면 N회 순회가 아닌 .size()만큼만 순회 해줘야 함|
+|24/07/21|[2606](https://www.acmicpc.net/problem/2606)|바이러스|`graphs` `graph_traversal` `bfs` `dfs`|Sliver3|`graphs` `graph_traversal` `dfs`|DFS로 1번 정점부터 검사하여 1번 정점을 제외한 방문 정점의 개수를 출력하면 됨|
+|24/07/21|[1012](https://www.acmicpc.net/problem/1012)|유기농 배추|`graphs` `graph_traversal` `bfs` `dfs`|Sliver2|`graphs` `graph_traversal` `dfs`|N*M에 대해 모두 방문 처리(1)을 해두고 입력받은 좌표는 미방문 처리(0) -> (0,0) ~(M,N)에 대해 미방문한 경우를 DFS탐색하고 방문 처리-> 반복 -> 최초로 시작한 방문들의 횟수가 정답|
 |24/07/|[]()||``||``||
 
 *실버 이상만 기록( 단, 브론즈 문제일지라도 특정 알고리즘을 테스트하기 위한 PS라면 기록함.)
