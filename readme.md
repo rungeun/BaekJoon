@@ -30,10 +30,15 @@
 |24/07/21|[2606](https://www.acmicpc.net/problem/2606)|바이러스|`graphs` `graph_traversal` `bfs` `dfs`|Sliver3|`graphs` `graph_traversal` `dfs`|DFS로 1번 정점부터 검사하여 1번 정점을 제외한 방문 정점의 개수를 출력하면 됨|
 |24/07/21|[1012](https://www.acmicpc.net/problem/1012)|유기농 배추|`graphs` `graph_traversal` `bfs` `dfs`|Sliver2|`graphs` `graph_traversal` `dfs`|N*M에 대해 모두 방문 처리(1)을 해두고 입력받은 좌표는 미방문 처리(0) -> (0,0) ~(M,N)에 대해 미방문한 경우를 DFS탐색하고 방문 처리-> 반복 -> 최초로 시작한 방문들의 횟수가 정답|
 |24/07/21|[1260](https://www.acmicpc.net/problem/1260)|DFS와 BFS|`graphs` `graph_traversal` `bfs` `dfs`|Sliver2|`graphs` `graph_traversal` `bfs` `dfs`|각 정점들의 엣지를 정렬하고 DFS와 BFS를 수행함|
-|24/07/|[11724](https://www.acmicpc.net/problem/11724)|연결 요소의 개수|`graphs` `graph_traversal` `bfs` `dfs`|Sliver2|`graphs` `graph_traversal` `dfs`|dfs로 간단하게 풀이 가능. visited가 모두 true가 될 때까지 dfs를 반복하면 됨|
+|24/07/21|[11724](https://www.acmicpc.net/problem/11724)|연결 요소의 개수|`graphs` `graph_traversal` `bfs` `dfs`|Sliver2|`graphs` `graph_traversal` `dfs`|dfs로 간단하게 풀이 가능. visited가 모두 true가 될 때까지 dfs를 반복하면 됨|
+|24/07/22|[21736](https://www.acmicpc.net/problem/21736)|헌내기는 친구가 필요해|`graphs` `graph_traversal` `bfs` `dfs`|Sliver2|`graphs` `graph_traversal` `bfs`|길=0(미방문), 벽=1(방문), 사람=2(미방문)으로 방문 벡터를 초기화하고 BFS로 시작 좌표부터 미방문한 정점들을 찾으며 2일 결우 count함|
+|24/07/22|[21736](https://www.acmicpc.net/problem/21736)|헌내기는 친구가 필요해|`graphs` `graph_traversal` `bfs` `dfs`|Sliver2|`graphs` `graph_traversal` `bfs`|길=0(미방문), 벽=1(방문), 사람=2(미방문)로 visited를 초기화하고 미방문 정점에 대해 bfs를 수행함, 상하좌우 로직을 간결하게 수정함: $$int \ dr[4] = \{0, 0, -1, 1\};$$ $$int \ dc[4] = \{1, -1, 0, 0\};$$ $$int \ nr = cr + dr[k];$$$$int \ nc = cc + dc[k];$$|
+|24/07/22|[10026](https://www.acmicpc.net/problem/10026)|적록색약|`graphs` `graph_traversal` `bfs` `dfs`|Gold5|`graphs` `graph_traversal` `bfs` `dfs`|일반: 방문 =0, 미방문 R=1, G=2 ,B =3 $\mid$ 적록색약: 방문 =0, 미방문 R,G=1 ,B =2 으로 방문배열을 초기화 함 dfs로 품, 상하좌우 검사시 21736처럼 하지 않고 if문으로 각각 분기를 만들어 구현함(21736코드가 간결하고 더 좋음)|
+|24/07/22|[2573](https://www.acmicpc.net/problem/2573)|빙산|`graphs` `graph_traversal` `bfs` `dfs`|Gold4|`graphs` `graph_traversal` `dfs`|dfs로 품, dfs(), dfsAll(), copy(), ice(), checkice(), solve()함수들을 만들어서 품|
 |24/07/|[]()||``||``||
 |24/07/|[]()||``||``||
 |24/07/|[]()||``||``||
+
 
 *실버 이상만 기록( 단, 브론즈 문제일지라도 특정 알고리즘을 테스트하기 위한 PS라면 기록함.)
 
