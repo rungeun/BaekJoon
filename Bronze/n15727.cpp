@@ -1,12 +1,8 @@
 ﻿#pragma GCC optimize("O3,Ofast,unroll-loops")
 #include <bits/stdc++.h>
-#if !(defined ONLINE_JUDGE || defined CODE_GROUND)
-#define TEST(X, Y) cerr << (X) << ": " << (Y) << '\n'
-#else
-#define TEST(x, Y)
-#endif
+#define TEST(X, Y) cout << X << "_TEST: " << Y << '\n'
 #define ALL(x) x.begin(), x.end()
-#define FOR(y, x) for (int(y) = 0; (y) < (x); (y)++)
+#define FOR(y, x) for (int y = 0; y < (x); y++)
 using namespace std;
 using ll = long long;
 using ld = long double;
@@ -14,7 +10,6 @@ using pii = pair<int, int>;
 constexpr ll MOD = 1e9 + 7;
 constexpr int sz = 1 << 17;
 constexpr int INF = 0x7fffffff;
-int N;
 
 // 1<<7  : 128
 // 1<<17 : 131,072
@@ -30,9 +25,11 @@ int N;
 
 int solve() {
     int Answer = 0;
+    int N;
     cin >> N;
-    FOR(_, N) {
-        
+    Answer = N / 5;
+    if (N % 5 != 0) {
+        Answer++;
     }
     return Answer;
 }
@@ -43,7 +40,7 @@ int main(void) {
     // int testCase;
     // cin >> testCase;
     // for (int _ = 0; _ < testCase; _++) {
-    cout << solve() << '\n';
+    cout << solve();  //<< '\n';
     //  }
     return 0;
 }

@@ -1,12 +1,8 @@
 ﻿#pragma GCC optimize("O3,Ofast,unroll-loops")
 #include <bits/stdc++.h>
-#if !(defined ONLINE_JUDGE || defined CODE_GROUND)
-#define TEST(X, Y) cerr << (X) << ": " << (Y) << '\n'
-#else
-#define TEST(x, Y)
-#endif
+#define TEST(X, Y) cout << X << "_TEST: " << Y << '\n'
 #define ALL(x) x.begin(), x.end()
-#define FOR(y, x) for (int(y) = 0; (y) < (x); (y)++)
+#define FOR(y, x) for (int y = 0; y < (x); y++)
 using namespace std;
 using ll = long long;
 using ld = long double;
@@ -14,7 +10,6 @@ using pii = pair<int, int>;
 constexpr ll MOD = 1e9 + 7;
 constexpr int sz = 1 << 17;
 constexpr int INF = 0x7fffffff;
-int N;
 
 // 1<<7  : 128
 // 1<<17 : 131,072
@@ -29,10 +24,19 @@ int N;
 // const ull INF = (1ULL << 63) - 1 + (1ULL << 63); // 2^64 - 1
 
 int solve() {
-    int Answer = 0;
-    cin >> N;
-    FOR(_, N) {
-        
+    int Answer;
+    int a, b, c;
+    cin >> a >> b >> c;
+    if (a == b & b == c) {
+        Answer = 10'000 + a * 1'000;
+    } else if (a == b) {
+        Answer = 1'000 + (a) * 1'00;
+    } else if (b == c) {
+        Answer = 1'000 + (b) * 1'00;
+    } else if (a == c) {
+        Answer = 1'000 + (c) * 1'00;
+    } else {
+        Answer = max(a, max(b, c)) * 100;
     }
     return Answer;
 }
@@ -43,7 +47,7 @@ int main(void) {
     // int testCase;
     // cin >> testCase;
     // for (int _ = 0; _ < testCase; _++) {
-    cout << solve() << '\n';
+    cout << solve();  //<< '\n';
     //  }
     return 0;
 }

@@ -35,8 +35,12 @@
 |24/07/22|[21736](https://www.acmicpc.net/problem/21736)|헌내기는 친구가 필요해|`graphs` `graph_traversal` `bfs` `dfs`|Sliver2|`graphs` `graph_traversal` `bfs`|길=0(미방문), 벽=1(방문), 사람=2(미방문)로 visited를 초기화하고 미방문 정점에 대해 bfs를 수행함, 상하좌우 로직을 간결하게 수정함: $$int \ dr[4] = \{0, 0, -1, 1\};$$ $$int \ dc[4] = \{1, -1, 0, 0\};$$ $$int \ nr = cr + dr[k];$$$$int \ nc = cc + dc[k];$$|
 |24/07/22|[10026](https://www.acmicpc.net/problem/10026)|적록색약|`graphs` `graph_traversal` `bfs` `dfs`|Gold5|`graphs` `graph_traversal` `bfs` `dfs`|일반: 방문 =0, 미방문 R=1, G=2 ,B =3 $\mid$ 적록색약: 방문 =0, 미방문 R,G=1 ,B =2 으로 방문배열을 초기화 함 dfs로 품, 상하좌우 검사시 21736처럼 하지 않고 if문으로 각각 분기를 만들어 구현함(21736코드가 간결하고 더 좋음)|
 |24/07/22|[2573](https://www.acmicpc.net/problem/2573)|빙산|`graphs` `graph_traversal` `bfs` `dfs`|Gold4|`graphs` `graph_traversal` `dfs`|dfs로 품, dfs(), dfsAll(), copy(), ice(), checkice(), solve()함수들을 만들어서 품|
-|24/07/|[]()||``||``||
-|24/07/|[]()||``||``||
+|24/07/25|[2178](https://www.acmicpc.net/problem/2178)|미로 탐색|`graphs` `graph_traversal` `bfs`|Sliver1|`graphs` `graph_traversal` `bfs`|(0,0)에서 (N-1,M-1)까지의 탐색 거리를 저장하고 출력함|
+|24/07/25|[14940](https://www.acmicpc.net/problem/14940)|쉬운 최단거리|`graphs` `graph_traversal` `bfs`|Sliver1|`graphs` `graph_traversal` `bfs`|BFS의 최단거리 찾기 기본 문제임, $dist[nr][nc] = dist[cr][cc] + 1;$로 dist에 각 정점에 대한 거리를 기록한 후에 출력함(예외처리 필요)|
+|24/07/25|[2667](https://www.acmicpc.net/problem/2667)|단지번호붙이기|`graphs` `graph_traversal` `bfs`|Sliver1|`graphs` `graph_traversal` `bfs`|부분집합의 개수와 각 부분집합에는 몇 개의 정점이 있는지 구하는 문제, bfs의 방문 횟수와 bfs의 호출 횟수를 구하여 출력함|
+|24/07/25|[11403](https://www.acmicpc.net/problem/11403)|경로 찾기|`graphs` `graph_traversal` `floyd_warshall` `shortest_path`|Sliver1|`graphs` `graph_traversal` `bfs`|각 정점에 대해 bfs(인접행렬)를 수행하고 본인으로 돌아는 길이 있는지 추가로 검사함|
+|24/07/25|[7576](https://www.acmicpc.net/problem/7576)|토마토|`graphs` `graph_traversal` `bfs`|Gold5|`graphs` `graph_traversal` `bfs`|최초 위치(1)들을 큐에 넣음 ->큐에 있는 원소들 bfs -> bfs돌리면서 다음 위치를 큐에 넣음 -> 큐가 빌 때까지 과정 반복 -> 마지막 정점의 값 출력|
+|24/07/25|[7569](https://www.acmicpc.net/problem/7569)|토마토|`graphs` `graph_traversal` `bfs`|Gold5|`graphs` `graph_traversal` `bfs`|7576과 동일하나 탐색 범위를 추가함 $$int \ dr[6] = \{0, 0, 0, 0, -1, 1\};$$ $$int \ dc[6] = \{0, 0, -1, 1, 0, 0\};$$ $$int \ dh[6] = \{-1, 1, 0, 0, 0, 0\};$$ 큐에서 3개의 값을 묶기 위해 `turple`을 사용함 $$queue<tuple<int, int, int>> \ qu;$$ 최초 위치(1)들을 큐에 넣음 ->큐에 있는 원소들 bfs -> bfs돌리면서 다음 위치를 큐에 넣음 -> 큐가 빌 때까지 과정 반복 -> 마지막 정점의 값 출력|
 |24/07/|[]()||``||``||
 
 
@@ -74,4 +78,3 @@
 19 : Platinum II
 20 : Platinum I
 -->
-

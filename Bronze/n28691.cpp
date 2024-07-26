@@ -1,12 +1,8 @@
 ﻿#pragma GCC optimize("O3,Ofast,unroll-loops")
 #include <bits/stdc++.h>
-#if !(defined ONLINE_JUDGE || defined CODE_GROUND)
-#define TEST(X, Y) cerr << (X) << ": " << (Y) << '\n'
-#else
-#define TEST(x, Y)
-#endif
+#define TEST(X, Y) cout << X << "_TEST: " << Y << '\n'
 #define ALL(x) x.begin(), x.end()
-#define FOR(y, x) for (int(y) = 0; (y) < (x); (y)++)
+#define FOR(y, x) for (int y = 0; y < (x); y++)
 using namespace std;
 using ll = long long;
 using ld = long double;
@@ -14,7 +10,6 @@ using pii = pair<int, int>;
 constexpr ll MOD = 1e9 + 7;
 constexpr int sz = 1 << 17;
 constexpr int INF = 0x7fffffff;
-int N;
 
 // 1<<7  : 128
 // 1<<17 : 131,072
@@ -28,12 +23,32 @@ int N;
 // 1<<64 - 1 : 18,446,744,073,709,551,615 (unsigned long long자료형의 상한값)
 // const ull INF = (1ULL << 63) - 1 + (1ULL << 63); // 2^64 - 1
 
-int solve() {
-    int Answer = 0;
-    cin >> N;
-    FOR(_, N) {
-        
+string solve() {
+    string Answer;
+    char ch;
+    cin >> ch;
+    switch (ch) {
+        case 'M':
+            Answer = "MatKor";
+            break;
+
+        case 'W':
+            Answer = "WiCys";
+            break;
+
+        case 'C':
+            Answer = "CyKor";
+            break;
+
+        case 'A':
+            Answer = "AlKor";
+            break;
+
+        case '$':
+            Answer = "$clear";
+            break;
     }
+
     return Answer;
 }
 
@@ -43,7 +58,7 @@ int main(void) {
     // int testCase;
     // cin >> testCase;
     // for (int _ = 0; _ < testCase; _++) {
-    cout << solve() << '\n';
+    cout << solve();  //<< '\n';
     //  }
     return 0;
 }
