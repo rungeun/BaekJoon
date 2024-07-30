@@ -41,6 +41,7 @@
 |24/07/25|[11403](https://www.acmicpc.net/problem/11403)|경로 찾기|`graphs` `graph_traversal` `floyd_warshall` `shortest_path`|Sliver1|`graphs` `graph_traversal` `bfs`|각 정점에 대해 bfs(인접행렬)를 수행하고 본인으로 돌아는 길이 있는지 추가로 검사함|
 |24/07/25|[7576](https://www.acmicpc.net/problem/7576)|토마토|`graphs` `graph_traversal` `bfs`|Gold5|`graphs` `graph_traversal` `bfs`|최초 위치(1)들을 큐에 넣음 ->큐에 있는 원소들 bfs -> bfs돌리면서 다음 위치를 큐에 넣음 -> 큐가 빌 때까지 과정 반복 -> 마지막 정점의 값 출력|
 |24/07/25|[7569](https://www.acmicpc.net/problem/7569)|토마토|`graphs` `graph_traversal` `bfs`|Gold5|`graphs` `graph_traversal` `bfs`|7576과 동일하나 탐색 범위를 추가함 $$int \ dr[6] = \{0, 0, 0, 0, -1, 1\};$$ $$int \ dc[6] = \{0, 0, -1, 1, 0, 0\};$$ $$int \ dh[6] = \{-1, 1, 0, 0, 0, 0\};$$ 큐에서 3개의 값을 묶기 위해 `turple`을 사용함 $$queue<tuple<int, int, int>> \ qu;$$ 최초 위치(1)들을 큐에 넣음 ->큐에 있는 원소들 bfs -> bfs돌리면서 다음 위치를 큐에 넣음 -> 큐가 빌 때까지 과정 반복 -> 마지막 정점의 값 출력|
+|24/07/25|[11047](https://www.acmicpc.net/problem/11047)|동전 0|`greedy`|Sliver4|`greedy` `stack`|입력 받은 값을 스택에 넣고 하나씩 빼며 나머지, 나눗셈 연산을 함|
 |24/07/|[]()||``||``||
 
 
@@ -77,4 +78,10 @@
 18 : Platinum III
 19 : Platinum II
 20 : Platinum I
+
+CLASS 1: 프로그래밍 문제해결 초심자가 문제해결에 익숙해질 수 있도록 하는 단계
+CLASS 2: 기초적인 자료 구조, 알고리즘 및 컴퓨팅 사고력을 이용해 문제를 해결해야 하는 단계
+CLASS 3–4: 코딩 테스트 및 현업에서 사용되는 컴퓨터과학 학부 수준의 자료 구조, 알고리즘 및 컴퓨팅 사고력을 이용해 문제를 해결해야 하는 단계
+CLASS 5–6: 프로그래밍 대회에서 등장하는 여러 기반 지식을 이용해 문제를 해결해야 하는 단계
+CLASS 7–10: 프로그래밍 대회에서 등장하는 심화 지식을 이용해 문제를 해결해야 하는 단계
 -->

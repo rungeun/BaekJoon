@@ -18,17 +18,17 @@ int N, M;
 int arr[8];
 bool vi[8];
 
-void rec(int dep) {
+void rec(int dep, int s) {
     if (dep == M) {
         FOR(_, M) cout << arr[_] + 1 << ' ';
         cout << '\n';
         return;
     }
-    FOR(i, N) {
+    for (int i = s; i < N; i++) {
         if (!vi[i]) {
             vi[i] = true;
             arr[dep] = i;
-            rec(dep + 1);
+            rec(dep + 1, i + 1);
             vi[i] = false;
         }
     }
@@ -37,7 +37,7 @@ void rec(int dep) {
 void solve() {
     int Answer = 0;
     cin >> N >> M;
-    rec(0);
+    rec(0, 0);
 }
 
 int main(void) {

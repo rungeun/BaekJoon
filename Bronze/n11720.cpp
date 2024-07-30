@@ -14,35 +14,22 @@ using pii = pair<int, int>;
 constexpr ll MOD = 1e9 + 7;
 constexpr int sz = 1 << 17;
 constexpr int INF = 0x7fffffff;
-int N, M;
-int arr[8];
-bool vi[8];
+int N;
 
-void rec(int dep) {
-    if (dep == M) {
-        FOR(_, M) cout << arr[_] + 1 << ' ';
-        cout << '\n';
-        return;
-    }
-    FOR(i, N) {
-        if (!vi[i]) {
-            vi[i] = true;
-            arr[dep] = i;
-            rec(dep + 1);
-            vi[i] = false;
-        }
-    }
-}
-
-void solve() {
+int solve() {
     int Answer = 0;
-    cin >> N >> M;
-    rec(0);
+    char ch;
+    cin >> N;
+    FOR(_, N) {
+        cin>>ch;
+        Answer+= ch-'0';
+    }
+    return Answer;
 }
 
 int main(void) {
     ios::sync_with_stdio(false);
     std::cin.tie(NULL);
-    solve();
+    cout << solve() << '\n';
     return 0;
 }
